@@ -1,0 +1,96 @@
+/*Reset css*/
+*,
+*::before,
+::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', 'Arial', sans-serif;
+}
+
+h1, h2, h3,
+h4, h5, h6{
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+button{
+    background-color: transparent;
+    color: inherit;
+    border-width: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+input{
+    outline: none;
+    padding-left: 5px;
+}
+
+body{
+    background-color: rgba(201, 201, 201, 0.541);
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.login-form{
+    background-color: rgba(255, 255, 255, 0.541);
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-top: 30vh;
+    padding: 30px 50px 60px 50px;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.5);
+}
+
+.login-h2{
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.input-email{
+    margin-top: 16px;
+}
+
+.input-password{
+    margin-top: 24px;
+}
+
+.input-email,
+.input-password{
+    height: 2.3rem;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: -1px -1px 5px rgba(0, 0, 0, 0.1);
+    font-weight: 500;
+    font-size: 1rem;
+    padding-left: 10px;
+}
+
+.btn-submit{
+    display: block;
+    max-width: 23%;
+    width: 100%;
+    margin-top: 16px;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 6px 0;
+    border: none;
+    border-radius: 8px;
+    border: 1px solid rgba(38, 0, 252, 0.8);
+    background: linear-gradient(to top, rgb(62, 28, 252), rgb(52, 18, 247));
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.2);
+}
