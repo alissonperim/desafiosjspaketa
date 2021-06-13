@@ -1,0 +1,97 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(99, 82, 252, 0.479);
+    font-family: 'Hammersmith One', sans-serif;
+}
+
+.container{
+    max-width: 700px;
+    min-height: 50vh;
+    margin: 20vh auto 0 auto;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    transition: all 0.3 ease-in;
+}
+
+.cont-active{
+    display: none;
+}
+
+.cont-active.active{
+    display: block;
+}
+
+.color-ctn-0{
+    background-color: rgb(240, 88, 74);
+    color: #fff;
+    box-shadow: 0px 30px 10px -10px rgba(240, 88, 74, 0.9);
+}
+
+.color-ctn-1{
+    background-color: rgb(43, 88, 119);
+    color: #fff;
+    box-shadow: 0px 30px 10px -10px rgba(43, 88, 119, 0.9);
+}
+
+.color-ctn-2{
+    background-color: rgb(140, 48, 99);
+    color: #fff;
+    box-shadow: 0px 30px 10px -10px rgba(140, 48, 99, 0.9);
+}
+
+.color-ctn-3{
+    background-color: rgb(242, 75, 120);
+    color: #fff;
+    box-shadow: 0px 30px 10px -10px rgba(242, 75, 120, 0.9);
+    margin-bottom: 30px;
+}
+
+.fa-quote-left{
+    text-align: center;
+    font-size: 4rem;
+    color: rgba(131, 131, 131, 0.6);
+}
+
+.text{
+    margin-top: 4rem;
+    font: 500 16px/1.5;
+    text-align: justify;
+}
+
+.author-name{
+    display: flex;
+    justify-content: flex-end;
+    margin: 2rem 0 0 auto;
+    text-transform: uppercase;
+}
+
+.authors-container{
+    max-width: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.img-author{
+    border-radius: 50px;
+    margin-top: 2rem;
+    width: 80%;
+    cursor: pointer;
+}
+
+.img-author.active{
+    transform: scale(1.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+}
