@@ -78,6 +78,16 @@ body{
     padding-left: 10px;
 }
 
+.btn-submit.disabled{
+    background-color: #ccc;
+    border: 1px solid #ccc;
+}
+
+.btn-submit.able{
+    border: 1px solid rgba(38, 0, 252, 0.8);
+    background: linear-gradient(to top, rgb(62, 28, 252), rgb(52, 18, 247));
+}
+
 .btn-submit{
     display: block;
     max-width: 23%;
@@ -88,8 +98,6 @@ body{
     padding: 6px 0;
     border: none;
     border-radius: 8px;
-    border: 1px solid rgba(38, 0, 252, 0.8);
-    background: linear-gradient(to top, rgb(62, 28, 252), rgb(52, 18, 247));
     color: rgb(255, 255, 255);
     cursor: pointer;
     box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.2);
