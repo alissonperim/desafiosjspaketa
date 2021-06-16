@@ -7,7 +7,15 @@
 
 
 const measurePoluition = (totalMeasure) => {
-
+    if(totalMeasure <= 0.25){
+        console.log("Índices dentro da normalidade")
+    }else if(totalMeasure > 0.25 || totalMeasure < 0.4){
+        console.log("Intimação enviada ao grupo 1!")
+    }else if(totalMeasure >= 0.4 || totalMeasure < 0.5){
+        console.log("Intimação enviada aos grupos 1 e 2!")
+    }else{
+        console.log("Intimação enviado a todos os grupos!")
+    }
 }
 
-measurePoluition(0.05)
+measurePoluition(0.5)

@@ -23,7 +23,7 @@ let LIST_PRODUCTS = [
 
 
 function percentIPI(ipi){
-    return ipi/100
+    return ipi/100 + 1
 }
 
 function paymentValue(list, ipi){
@@ -32,7 +32,7 @@ function paymentValue(list, ipi){
     let finalValue = 0
     list.map(li => {
         value += (li.price * li.amount)
-        finalValue = value + (value * percentIPI(ipi))
+        finalValue = value * percentIPI(ipi)
     })
     return console.log(`Valor total a ser pago: ${finalValue.toFixed(2).replace('.', ',')}`)
 }
