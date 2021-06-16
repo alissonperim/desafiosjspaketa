@@ -41,7 +41,6 @@ body{
     flex-wrap: wrap;
     padding: 30px;
     overflow: hidden;
-    
 }
 
 .container-question--h2{
@@ -84,6 +83,7 @@ body{
 
 .container-question.active{
     background-color: rgb(255, 255, 255);
+    box-shadow: 0px 5px 15px -10px rgba(0, 0, 0, 0.3);
 }
 
 .container-question.active .container-question--p{
