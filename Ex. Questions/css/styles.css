@@ -1,0 +1,126 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', 'Arial', sans-serif;
+    font-size: 16px;
+}
+
+h1, h2, h3,
+h4, h5, h6, p{
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+body{
+    background-color: rgb(243, 243, 243);
+}
+
+.container{
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.container--h1{
+    align-self: center;
+    margin-top: 10%;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.container-question{
+    margin-top: 5%;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    position: relative;
+    flex-wrap: wrap;
+    padding: 30px;
+    overflow: hidden;
+    
+}
+
+.container-question--h2{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-right: 35px;
+}
+
+.container-question--p{
+    font-size: 1rem;
+    margin: 30px 0 0 0;
+    display: none;
+}
+
+.btn-toggle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    overflow: hidden;
+    
+    transition: all 0.2s ease-in-out;
+}
+
+.fa-chevron-down{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.fa-times{
+    display: none;
+}
+
+.container-question.active{
+    background-color: rgb(255, 255, 255);
+}
+
+.container-question.active .container-question--p{
+    display: block;
+}
+
+.container-question.active .btn-toggle{
+    background-color: rgb(122, 122, 122);
+    
+}
+
+.container-question.active .fa-chevron-down{
+    display: none;
+}
+
+.container-question.active .fa-times{
+    display: block;
+    color: rgb(255, 255, 255);
+    margin-left: -1px;
+}
+
+.container-question.active::before,
+.container-question.active::after{
+    color: rgb(0, 89, 255);
+    content: '\f075';
+    font-family: 'Font Awesome 5 Free';
+    font-size: 7rem;
+    top: 20px;
+    left: 20px;
+    position: absolute;
+    opacity: 0.1;
+    z-index: 0;
+}
+
+.container-question.active::before{
+    top: -10px;
+    left: -30px;
+    transform: rotateY(180deg);
+    color: rgb(255, 0, 0);
+}
