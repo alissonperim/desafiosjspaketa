@@ -94,8 +94,18 @@ body{
     font-weight: 400;
 }
 
+.suggestions-count--strong{
+    font-weight: inherit;
+}
+
+.suggestion-container{
+    display: flex;
+    flex-direction: column;
+}
+
 .suggestion-block{
     display: flex;
+    flex-direction: row;
     padding: 15px 20px;
     background-color: rgb(255, 255, 255);
     border-bottom: 1px solid rgb(160, 153, 153);
@@ -103,7 +113,10 @@ body{
 
 .vote-container{
     display: flex;
+    flex: 1;
     flex-direction: column;
+    align-items: center;
+    max-width: 50px;
 }
 
 .btn-count{
@@ -116,7 +129,6 @@ body{
     border: 1px solid rgb(102, 100, 100);
     background: transparent;
     cursor: pointer;
-    align-self: center;
 }
 
 .btn-count:active{
@@ -127,19 +139,24 @@ body{
     color: rgb(102, 100, 100);
 }
 
-.count-numbers{
+.count-votes{
+    font-weight: 300;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+}
+
+.count-numbers{
+    align-self: center;
     padding-top: 10px;
     font-size: 1.5rem;
 }
 
-.count-votes{
-    align-self: center;
-    font-weight: 300;
-}
-
 .suggestions{
+    display: flex;
+    flex-direction: row;
+    flex: 2;
+    max-width: 90%;
+    width: 100%;
     margin: 0 0 0 30px;
 }
 
