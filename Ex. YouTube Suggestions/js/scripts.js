@@ -37,7 +37,6 @@ const textAreaEnter = () => {
             suggestionsCount.innerText = count
             sugestionContainer.innerHTML += newSuggestion
             document.querySelector("#txtarea").value = ""
-            suggestionsBlock.length++
         }
     })
 }

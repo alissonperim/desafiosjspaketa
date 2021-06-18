@@ -3,10 +3,10 @@ let openContainer = document.querySelectorAll('.btn-toggle')
 
 const openContainerQuestion = () => {
     openContainer.forEach((btn, index) => {
-        btn.addEventListener('click', (e) => {
+        btn.addEventListener('click', () => {
             containerQuestion[index].classList.toggle('active')
         })
     })
 }
 
-openContainerQuestion(openContainer)
+openContainerQuestion()
